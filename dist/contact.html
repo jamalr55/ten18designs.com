@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Contact Me | Graphic & UI/UX Designer</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="main-nav">
+          <img src="img/logo2.png" alt="My Portfolio" id="logo" />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Bio</a></li>
+            <li><a href="work.html">Portfolio</a></li>
+            <li><a href="contact.html" class="current">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- SECTION A: CONTACT FORM -->
+    <section id="contact-a" class="text-center py-3">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Here is how you can reach me</p>
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <div class="text-fields">
+            <input
+              type="text"
+              class="text-input name-input"
+              placeholder="Name"
+              name="name"
+            />
+            <input
+              type="text"
+              class="text-input subject-input"
+              placeholder="Subject"
+              name="subject"
+            />
+            <input
+              type="email"
+              class="text-input email-input"
+              placeholder="Email"
+              name="email"
+            />
+            <input
+              type="text"
+              class="text-input phone-input"
+              placeholder="Phone Number"
+              name="phone"
+            />
+            <textarea
+              class="text-input message-input"
+              placeholder="Enter Message"
+              name="message"
+            ></textarea>
+            <div class="my-2">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+          </div>
+          <button type="submit" class="btn-dark">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- SECTION B: CONTACT INFO -->
+    <section id="contact-b" class="py-3 bg-dark">
+      <div class="container">
+        <div class="contact-info">
+          <div>
+            <i class="fas fa-envelope fa-2x"></i>
+            <h3>Email</h3>
+            <p>jmlrchrdsn55@gmail.com</p>
+          </div>
+
+          <div>
+            <i class="fas fa-phone fa-2x"></i>
+            <h3>Phone</h3>
+            <p>(832) 453-9170</p>
+          </div>
+
+          <div>
+            <i class="fas fa-map-pin fa-2x"></i>
+            <h3>Location</h3>
+            <p>Houston, TX</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION C: TAGLINE -->
+    <section id="contact-c" class="bg-main py-4">
+      <div class="container">
+        <h1>Let's Start Your Next Project</h1>
+        <ul>
+          <li>Web Development</li>
+          <li>Logos & Brand Identity Packages</li>
+          <li>Business Cards</li>
+          <li>Letterhead & Envelopes</li>
+          <li>Postcards</li>
+          <li>Flyers</li>
+          <li>Posters</li>
+          <li>Promotional Items</li>
+          <li>Newsletters</li>
+          <li>Mixtape, Album & Book Covers</li>
+          <li>Product Packaging</li>
+          <li>Brochure</li>
+          <li>Banners & Signs</li>
+          <li>Catalogs</li>
+          <li>Photography</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer">
+      <div class="footer-content container">
+        <ul class="accordion">
+          <li class="tab">
+            <div class="social facebook">
+              <a href="https://www.facebook.com/jamalr55" target="_blank"
+                >Facebook</a
+              >
+            </div>
+            <div class="content">
+              <h1>Facebook</h1>
+              <p>
+                Follow me on Facebook to stay up to date with TEN18 Designs.
+              </p>
+            </div>
+          </li>
+          <li class="tab">
+            <div class="social linkedin">
+              <a href="https://www.linkedin.com/in/jamalr" target="_blank"
+                >LinkedIn</a
+              >
+            </div>
+            <div class="content">
+              <h1>LinkedIn</h1>
+              <p>Connect with me on a professional level on Linkedin.</p>
+            </div>
+          </li>
+          <li class="tab">
+            <div class="social github">
+              <a href="https://github.com/jamalr55" target="_blank">Github</a>
+            </div>
+            <div class="content">
+              <h1>Github</h1>
+              <p>Check out my Github for my personal projects and more.</p>
+            </div>
+          </li>
+          <li class="tab">
+            <div class="social codepen">
+              <a href="https://codepen.io/jamalr55/" target="_blank">CodePen</a>
+            </div>
+            <div class="content">
+              <h1>CodePen</h1>
+              <p>Check out my CodePen for my personal projects and more.</p>
+            </div>
+          </li>
+        </ul>
+
+        <p>Copyright &copy; <span id="year"></span>. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+    </script>
+  </body>
+</html>

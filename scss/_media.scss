@@ -1,0 +1,248 @@
+// TABLETS & SMALLER
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem;
+
+    .header-content {
+      padding-top: 5rem;
+    }
+  }
+}
+
+// SMARTPHONES
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+
+  #header {
+    &-home {
+      height: 10rem;
+      border-bottom: 3px solid $main-color;
+      background-position: 20% 30%;
+
+      .header-content {
+        display: none;
+      }
+    }
+
+    &-inner {
+      height: 10rem;
+    }
+  }
+
+  // STACK GRID COLUMNS
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  #contact-b .contact-info,
+  .items,
+  .web {
+    grid-template-columns: 1fr;
+  }
+
+  // HOME
+  #home {
+    &-a {
+      .specials div {
+        border-bottom: 1px $light-color solid;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &-b {
+      .stat div {
+        padding: 2rem 0 1rem 0;
+      }
+    }
+  }
+
+  // ABOUT
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          "bioimage"
+          "bio"
+          "section-title"
+          "aw1"
+          "aw2"
+          "aw3";
+      }
+    }
+
+    &-c {
+      display: none;
+    }
+  }
+
+  // CONTACT
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message";
+      }
+    }
+
+    &-b {
+      div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px #555 solid;
+
+        &:last-child {
+          border: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &-c {
+      h1 {
+        font-size: 2rem;
+      }
+
+      ul {
+        columns: 1;
+        font-size: 1.2rem;
+        text-align: center;
+      }
+    }
+  }
+
+  // FOOTER
+  #main-footer {
+    height: 10rem;
+
+    .footer-content {
+      flex-direction: column;
+      height: 10rem;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .accordion {
+    background: #42281b;
+    display: block;
+    list-style-type: none;
+    overflow: hidden;
+    height: 100px;
+    font-size: 0;
+    padding: 10px;
+  }
+
+  .tab {
+    display: inline-block;
+    background-color: #42281b;
+    border-right: #e68800 solid 1px;
+    width: 80px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    transition: all 0.5s ease-in-out 0.1s;
+  }
+
+  .tab:last-child {
+    border-right: none;
+  }
+
+  .tab .content {
+    background: #fff;
+    width: -360px;
+    height: 200px;
+    margin-left: 80px;
+    position: relative;
+    padding: 5px 5px;
+  }
+
+  .tab .content h1 {
+    font-size: 2rem;
+    margin-bottom: 1px;
+  }
+
+  .tab .content p {
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+    padding-right: 30px;
+  }
+
+  .social a:before,
+  .social a:after {
+    width: 80px;
+    height: 200px;
+    position: absolute;
+    text-indent: 0;
+    padding-top: 35px;
+    padding-left: 25px;
+    display: block;
+    font: normal 30px Genericons;
+    color: #fff;
+  }
+
+  .social a:after {
+    font-size: 48px;
+    padding-left: 20px;
+    padding-top: 25px;
+    margin-left: 85px;
+  }
+}
+
+/*  Add Icon */
+
+.facebook a:before,
+.facebook a:after {
+  content: "\f204";
+}
+
+.linkedin a:before,
+.linkedin a:after {
+  content: "\f208";
+}
+
+.github a:before,
+.github a:after {
+  content: "\f200";
+}
+
+.codepen a:before,
+.codepen a:after {
+  content: "\f216";
+}
+
+// LANDSCAPE
+@media (max-height: 580px) {
+  #header-home {
+    .header-content {
+      padding-top: 3rem;
+    }
+  }
+}
+
+@media (max-height: 330px) {
+  #header-home {
+    .header-content {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
