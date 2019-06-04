@@ -228,7 +228,7 @@ input[class^="btn-"]:hover {
   padding: 0; }
 
 body {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   line-height: 1.6;
   background: #fff; }
 
@@ -360,7 +360,9 @@ img {
 
 #about-a .about-info {
   display: grid;
-  grid-template-areas: "bioimage bio bio" "section-title section-title section-title" "aw1 aw2 aw3";
+  grid-template-areas: 'bioimage bio bio'
+ 'section-title section-title section-title'
+ 'aw1 aw2 aw3';
   grid-gap: 1.2rem; }
 
 #about-a .bio-image {
@@ -430,7 +432,9 @@ img {
 
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: "name email" "subject phone" "message message";
+  grid-template-areas: 'name email'
+ 'subject phone'
+ 'message message';
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem; }
   #contact-a .text-fields .name-input {
@@ -447,7 +451,7 @@ img {
   #contact-a .text-fields .text-input {
     padding: 0.5rem 1rem; }
 
-#contact-a button[type="submit"] {
+#contact-a button[type='submit'] {
   width: 50%; }
 
 #contact-b .contact-info {
@@ -475,10 +479,10 @@ img {
     align-items: center; }
 
 @font-face {
-  font-family: "Genericons";
+  font-family: 'Genericons';
   src: url("dist/genericons/genericons-regular-webfont.woff") format("woff"), url("dist/genericons/genericons-regular-webfont.eot") format("truetype"); }
 
-@media (min-width: 1200px) {
+@media (min-width: 600px) {
   .accordion {
     background: #42281b;
     width: 80%;
@@ -541,28 +545,28 @@ img {
 /*  Add Icon */
 .facebook a:before,
 .facebook a:after {
-  content: "\f204"; }
+  content: '\f204'; }
 
 .facebook a:after {
   background-color: #3b5998; }
 
 .linkedin a:before,
 .linkedin a:after {
-  content: "\f208"; }
+  content: '\f208'; }
 
 .linkedin a:after {
   background-color: #00a9cd; }
 
 .github a:before,
 .github a:after {
-  content: "\f200"; }
+  content: '\f200'; }
 
 .github a:after {
   background-color: #6dc993; }
 
 .codepen a:before,
 .codepen a:after {
-  content: "\f216"; }
+  content: '\f216'; }
 
 .codepen a:after {
   background-color: #6e5494; }
@@ -604,11 +608,20 @@ img {
   #home-b .stat div {
     padding: 2rem 0 1rem 0; }
   #about-a .about-info {
-    grid-template-areas: "bioimage" "bio" "section-title" "aw1" "aw2" "aw3"; }
+    grid-template-areas: 'bioimage'
+ 'bio'
+ 'section-title'
+ 'aw1'
+ 'aw2'
+ 'aw3'; }
   #about-c {
     display: none; }
   #contact-a .text-fields {
-    grid-template-areas: "name" "subject" "email" "phone" "message"; }
+    grid-template-areas: 'name'
+ 'subject'
+ 'email'
+ 'phone'
+ 'message'; }
   #contact-b div {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
@@ -629,7 +642,7 @@ img {
       flex-direction: column;
       height: 10rem; } }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   .accordion {
     background: #42281b;
     display: block;
@@ -684,19 +697,19 @@ img {
 /*  Add Icon */
 .facebook a:before,
 .facebook a:after {
-  content: "\f204"; }
+  content: '\f204'; }
 
 .linkedin a:before,
 .linkedin a:after {
-  content: "\f208"; }
+  content: '\f208'; }
 
 .github a:before,
 .github a:after {
-  content: "\f200"; }
+  content: '\f200'; }
 
 .codepen a:before,
 .codepen a:after {
-  content: "\f216"; }
+  content: '\f216'; }
 
 @media (max-height: 580px) {
   #header-home .header-content {
